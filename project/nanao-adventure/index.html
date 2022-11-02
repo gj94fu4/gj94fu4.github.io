@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <title>Nan'ao Adventure - Lucky Chang</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+
+    <!-- style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- carousel -->
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+    <!-- responsive -->
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <!-- font-awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="css/popup.css" rel="stylesheet" type="text/css">
+    <!-- Language Filter -->
+    <style type="text/css">
+      body.zh div[lang=en] {
+        display: none;
+      }
+      body.en div[lang=zh] {
+        display: none;
+      }
+    </style>
+
+  </head>
+
+  <!-- Redirecting HTTP to HTTPS -->
+  <script src="../../js/redirect2https.js"></script>
+
+  <body class="module-home en" data-spy="scroll" data-target=".navbar">
+
+    <!-- Language from URL -->
+    <script type="text/javascript">
+        var url = location.href;
+        if(url.indexOf('?') != -1){
+            var lang = "";
+            var ary = url.split('?')[1].split('&');
+            for(i = 0; i <= ary.length-1; i++){
+                if(ary[i].split('=')[0] == 'lang')
+                    lang = ary[i].split('=')[1];
+            }
+            if(lang == 'zh'){
+                document.body.className = 'zh';
+            }
+        }
+    </script>
+
+    <!-- Mouse Keyboard Forbidden -->
+    <script src="../../js/nomousekeyboard.js"></script>
+
+	<!-- header -->
+    	<header role="header" class="header-top" id="headere-top">
+            <div class="header-fixed-wrapper" role="header-fixed">
+                <div class="container">
+                    <!-- hgroup -->
+                    <hgroup class="row">
+
+                        <!-- logo -->
+                        <div class="col-xs-5 col-sm-2 col-md-2 col-lg-2">
+                            <h1>
+                                <a href="../../" title="LC">
+                                    <img src="../../img/favicon_white.png" style="width:48px" title="LC"/>
+                                </a>
+                            </h1>
+                        </div>
+                        <!-- logo -->
+
+                        <!-- nav -->
+                        <div lang="en">
+                        <nav role="navigation" class="col-xs-12 col-sm-10 col-md-10 col-lg-10 navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="../../" title="Home">Home</a></li>
+                                    <li><a href="../../profile/" title="Overview">Profile</a></li>
+                                    <li><a href="../../world/" title="Overview">Gallery</a></li>
+                                    <li><a onmouseover="switchMenu(this,'blog')" onclick="switchMenu(this,'blog')">Blog</a>
+                                        <ul id="blog">
+                                            <li><a href="../../blog/escapade/">The Grand Escapade</a></li>
+                                            <li><a href="../../blog/fairytale/">The Fairy Tale</a></li>
+                                            <li><a href="../../blog/hoshino/">Hoshino Story</a></li>
+                                            <li><a href="../../blog/island/">Island Diary</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../../project/" title="Overview">Project</a></li>
+							        <li><a onclick="document.body.className='zh'" style="cursor: pointer">中/EN</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        </div>
+                        <!-- nav -->
+                        <div lang="zh">
+                        <nav role="navigation" class="col-xs-12 col-sm-10 col-md-10 col-lg-10 navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="../../" title="Home">首頁</a></li>
+                                    <li><a href="../../profile/?lang=zh" title="Overview">關於我</a></li>
+                                    <li><a href="../../world/?lang=zh" title="Overview">相簿</a></li>
+                                    <li><a onmouseover="switchMenu(this,'blog')" onclick="switchMenu(this,'blog')">文字</a>
+                                        <ul id="blog">
+                                            <li><a href="../../blog/escapade/?lang=zh">大壯遊</a></li>
+                                            <li><a href="../../blog/fairytale/?lang=zh">半路上的童話故事</a></li>
+                                            <li><a href="../../blog/hoshino/?lang=zh">星野遊學</a></li>
+                                            <li><a href="../../blog/island/?lang=zh">荒島札記</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../../project/?lang=zh" title="Overview">業餘項目</a></li>
+							        <li><a onclick="document.body.className='en'" style="cursor: pointer">中/EN</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        </div>
+                        <!-- nav -->
+
+                    </hgroup>
+                    <!-- hgroup -->
+                </div>
+            </div>
+            
+            <!-- banner Text -->
+                 <section class="text-center">
+                    <h2>「步道X部道」南澳部落踩線特輯</h2>
+                    <p>Nan'ao adventure: ocean, forest, valleys, waterfalls, and Atayal tribes.</p>
+                    <!-- add style="padding-bottom: 10vh;" when not use the video buttom -->
+                    <!-- remove style="padding-bottom: 10vh;" when use the video buttom -->
+                     <a class="popup-vimeo video-button" href="https://www.youtube.com/watch?v=5Q8BI9fJNuI"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                     <a href="#section-one" class="button-header">Get Strated</a>
+                </section>
+            <!-- banner Text -->
+
+            <!-- banner image -->
+        	<figure>
+                <!-- <div class="parallax-window item tp-banner-container" data-parallax="scroll" data-image-src="http://placehold.it/1920x840"></div> -->
+                <div class="parallax-window item tp-banner-container" data-parallax="scroll" data-image-src="images/20180403_P0720_Nanao.JPG"></div>
+
+            </figure>
+            <!-- banner image -->
+
+        </header>
+    <!-- header -->
+
+    <!-- main -->
+    	<main role="main" id=" main-wrapper">
+
+            <!-- top pan -->
+            <section role="loges" class="top-pan">
+            	<div class="container">
+                	<ul class="row">
+                        <li class="col-xs-12 col-sm-4 col-md-3 col-lg-3">Supported by</li>
+                        <!-- 林務局 -->
+                        <li class="col-xs-5 col-sm-3 col-md-3 col-lg-3">
+                        	<a href="https://www.forest.gov.tw/" target="_blank"><img src="images/logos/forestry-bureau.png" alt="" class="img-responsive"/></a>
+                        </li>
+                        <!-- 健行筆記 -->
+                        <li class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                        	<a href="https://hiking.biji.co/" target="_blank"><img src="images/logos/hiking-biji.png" alt="" class="img-responsive"/></a>
+                        </li>
+                        <!-- Odlo -->
+                        <li class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                        	<a href="https://www.odlo.com/int/en/" target="_blank"><img src="images/logos/odlo.png" alt="" class="img-responsive"/></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        	<!-- top pan -->
+
+            <!-- section-one -->
+            <section class="section-one text-center" id="section-one">
+            	<div class="container">
+                	<header role="title-page" style="background-color:#FFF">
+                        <h2>認識南澳</h2>
+                        <h4><br/> The reason why you must visit Nan'ao <br/> once in your life. </h4>
+                    </header>
+                    <article>
+                        <!-- <h4 style="height:30px"><b>緣起</b></h4> -->
+                    	<p align="justify">
+                            　　從蜿蜒的山路進入開闊的南澳溪沖積平原，映入眼簾的鄉村田野仍那樣熟悉，
+                            還記得第一次獨自搭火車環島時，我便已深深愛上這塊被中央山脈和太平洋隔絕於世的「孤島」。
+                            第二次到南澳，是從蘭陽平原騎單車而來，有別於搭乘火車的輕鬆愜意，透過雙腳吃力地翻越蘇花山路，讓抵達時的喜悅格外真實。
+                            南澳擁有的一切都令我如此興奮與懷念。
+                        </p>
+                        <p align="justify">
+                            　　熱愛南澳有許多原因。這裡有大海、有叢林、有溪谷、有瀑布，還有純樸的泰雅族部落與流傳千年的南島語文化。
+                            我們可以沿著南澳溪出海口往上游走，不出幾個小時便盡覽一切。
+                            更重要的是，南澳是一塊能夠輕易依靠雙腳或簡單交通工具（如單車）來探索的地方，與鄰近的都市生活圈相距亦不遠，
+                            公路與鐵路運輸便利，完善的生活機能讓一般民眾前來探索的難度減低、意願增加，
+                            也使得這裡的山林之美、海天之闊、以及文化之豐饒能夠為國人、甚至世人所知。
+                        </p>
+                        <p align="justify">
+                            　　我相信，一個人要對一塊土地產生感情，必須要親自踏上探索之路，
+                            而當一個人親身在一個地方行旅過，便會對那裏懷抱感情。
+                            擁有感情是真正關心一塊土地的基石，讓我們一起來感受南澳這塊土地的熱情吧！
+                        </p>
+                    </article>
+                    <!-- four boxes  -->
+                    	<div class="row four-box-pan" role="four-box">
+                            <section class="col-xs-12 col-sm-6 col-md-3">
+                            	<figure><i><img src="icons/cycling-Google.png" style="width:50px; margin-top:20px; margin-left:22px;"></i></figure>
+                            	<h5>公路騎行 Cycling</h5>
+                                <p>
+                                    騎著單車悠遊在阡陌縱橫的鄉間小路，這兒少了車來人往的喧囂，清新芬芳的風拂過綠油油的稻田，撲鼻而來是春的稻香。
+                                </p>
+                            </section>
+                            <section class="col-xs-12 col-sm-6 col-md-3">
+                            	<figure><i><img src="icons/hiking-Freepik.png" style="width:50px; margin-top:23px; margin-left:26px;"></i></figure>
+                            	<h5>步道健走 Hiking</h5>
+                                <p>
+                                    踏上思念旅途，走進鬱鬱蔥蔥的叢林、或是比肩遼闊的太平洋，你會發現執念之渺小，當下的歡愉讓回憶和幸福永垂不朽。
+                                </p>
+                            </section>
+                            <section class="col-xs-12 col-sm-6 col-md-3">
+                            	<figure><i><img src="icons/eating-Freepik.png" style="width:50px; margin-top:23px; margin-left:23px;"></i></figure>
+                            	<h5>部落美食 Tasting</h5>
+                                <p>
+                                    糯米和香蕉的香氣在口中擴散開來，柔軟且富有彈性的內餡使人嚼出大地的氣息，味蕾因泰雅人的傳統美食香蕉飯而滿足。
+                                </p>
+                            </section>
+                            <section class="col-xs-12 col-sm-6 col-md-3">
+                            	<figure><i><img src="icons/artemis-Freepik.png" style="width:54px; margin-top:21px; margin-left:23px;"></i></figure>
+                            	<h5>傳統體驗 Experiencing</h5>
+                                <p>
+                                    泰雅族的薯榔染布、射箭與狩獵文化，讓人彷彿回到了從前與世無爭的年代，並且真正理解人類和大自然諧和共生的本質。
+                                </p>
+                            </section>
+                        </div>
+                    <!-- four boxes -->
+                    <article>
+                        <p align="justify" style="color:lightslategray; padding-top:40px">
+                            註：本網頁所提之「南澳」意指「南澳溪流域」，其中包含「南澳北溪」和「南澳南溪」兩條主要支流及其沖積平原，並非指「南澳鄉」、「南澳村」或「南澳車站」。其中本計劃探索的範圍屬南澳溪流域之下游（鄉公所稱「大南澳原野」），部分地區位於蘇澳鎮境內。
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <!-- section-one -->
+
+            <!-- section-two -->
+            <section class="section-two" id="section-two">
+
+                <section>
+                	<div class="col-xs-12 col-sm-6 col-md-6">
+                    	<article>
+                        	<h2>南澳村</h2>
+                            <p style="padding-top: 8px; padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                朝陽有間柑仔店，小時候在鄉下看到那種，有賣令人懷念的大豬公豬肉片，可惜沒有我更喜歡的香魚片。南澳村的原藝咖啡屋飲品非常棒，甜點美味得不得了，更重要的是老闆特地為我們開了店。平交道旁的安打烏醋麵是間「黑白切」麵店，但微酸的烏醋麵特別開味，吃完還想再一碗！
+                            </p>
+                            <ul style="padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                <li>山：朝洋國家步道、大南澳古道</li>
+                                <li>海：長灘海岸、朝洋漁港</li>
+                                <li>飲：園藝咖啡屋、建華冰店</li>
+                                <li>食：安打烏醋麵、好糧食堂</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <figure class="row" style="background-image:url('images/20170403_0101_Nanao.jpg')"></figure>
+                    </div>
+                </section>
+
+                <div class="clearfix"></div>
+
+                <section>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                    	<figure class="row" style="background-image:url('images/20190221_101625_NanaoLongBeach.JPG')"></figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                    	<article>
+                            <h2>長灘海岸</h2>
+                            <p style="padding-top: 8px; padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                神秘的長灘海岸全長大約八公里，終點是一塊金剛女王石，沿途的地質景觀相當多元，除了擁有豐富節理的山壁和岩石之外，還能夠欣賞大大小小、數不盡的海蝕洞。或許是因為路途遙遠，或許是因為沿途沒什麼特別的景點，這一片荒蕪的海岸保留了它應有的寧靜。不過，狹窄的海灘被波濤洶湧的大海以及高聳的峭壁所包圍，有好幾段路甚至完全位於潮間帶，要退潮的時候才可以安全通行。
+                            </p>
+                            <ul style="padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                <li>事先查詢潮汐</li>
+                                <li>不建議下海戲水</li>
+                                <li>單日長健行（五小時以上）</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <div class="clearfix"></div>
+
+                <section>
+                	<div class="col-xs-12 col-sm-6 col-md-6">
+                    	<article>
+                        	<h2>金岳部落</h2>
+                            <p style="padding-top: 8px; padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                阿姨帶我們體驗泰雅族傳統的「薯榔染布」，姊姊帶我們瀏覽金岳部落和泰雅族「祖靈的眼睛」，阿嬤一曲〈莎韻之鐘〉訴說少女悲傷的故事，大哥奏自製的口簧琴並演唱那首動人的〈思念〉，歷史與文化經過漫長歲月的洗禮歷久不衰。
+                            </p>
+                            <ul style="padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                <li>耆老街</li>
+                                <li>薯榔染布、傳統編織</li>
+                                <li>尤幹瓦蛋獵人學校</li>
+                                <li>楓香步道與金岳瀑布</li>
+                            </ul>
+                            <p style="padding-top: 12px; padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                詳請聯繫「愛南澳生態旅遊發展協會」和「金岳部落發展協會」。
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <figure class="row" style="background-image:url('images/20190219_1923_Ropwe.JPG')"></figure>
+                    </div>
+                </section>
+
+                <div class="clearfix"></div>
+
+                <section>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                    	<figure class="row" style="background-image:url('images/20190219_1957_Ropwe.JPG')"></figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                    	<article>
+                    		<h2>莎韻之鐘</h2>
+                            <p style="padding-top: 8px; padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                林克孝探尋莎韻之路的故事，在西元 2009 年以《找路：月光‧莎韻‧Klesan》一書呈現在世人面前，只可惜他在兩年後便因天候不佳而於束穗山墜崖離世，當時的他正在挖掘 Klesan 的遷徙之路。
+                            </p>
+                            <p style="padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                繼林克孝之後，莎韻當年的同學的孫女——紀錄片導演陳潔瑤（Laha Mebow）——透過電影《不一樣的月光》來呈現通往舊部落的路。
+                            </p>
+                            <ul style="padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                <li>武塔莎韻之鐘</li>
+                                <li>金岳莎韻廚房</li>
+                            </ul>
+                            <p style="padding-top: 12px; padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                詳請聯繫「愛南澳生態旅遊發展協會」和「金岳部落發展協會」。
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <div class="clearfix"></div>
+
+                <!-- video -->
+                <div class="video-pan text-center" lang="en">
+                    <a id="video" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=abWKpGR1YEM',containment:'.bg-container-youtube', showControls:false, autoPlay:false, loop:true, startAt:0, opacity:1, addRaster:false, quality:'large'}"></a>
+                    <!-- 5.0 background container autoPlay:true,  -->
+                    <div class="bg-container-youtube"></div>  
+                	<header><a class="popup-vimeo video-button" href="https://www.youtube.com/watch?v=abWKpGR1YEM"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                    <h4>
+                        "The Bell of Sayun Hayon" by Sayun Yawi, a senior of Tribe Rowpe.
+                    </h4>
+                    </header>
+                </div>
+                <!-- video -->
+                <div class="video-pan text-center" lang="zh">
+                    <a id="video" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=abWKpGR1YEM',containment:'.bg-container-youtube', showControls:false, autoPlay:false, loop:true, startAt:0, opacity:1, addRaster:false, quality:'large'}"></a>
+                    <!-- 5.0 background container autoPlay:true,  -->
+                    <div class="bg-container-youtube"></div>  
+                	<header><a class="popup-vimeo video-button" href="https://www.youtube.com/watch?v=abWKpGR1YEM"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                    <h4>
+                        金岳部落耆老莎韻．雅衛依（漢名：池蓮花）演唱〈莎韻之鐘》
+                    </h4>
+                    </header>
+                </div>
+                <!-- video -->
+
+                <div class="clearfix"></div>
+
+                <section>
+                	<div class="col-xs-12 col-sm-6 col-md-6">
+                    	<article>
+                        	<h2>尤幹瓦旦獵人學校</h2>
+                            <p style="padding-top: 8px; padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                獵人學校分成兩個部分，一個是位於路邊「教室」，那是一塊搭了獵寮的空地，雜草堆旁的陷阱則是他的教具，另一部分則是一段登山小徑，模擬真正的獵場。如此一來，和大哥學習狩獵文化的遊客便可以先在教室聽講解，實際到獵場時就很容易能夠理解沿途的所見所聞。
+                            </p>
+                            <ul>
+                                <li>泰雅族傳統陷阱教學</li>
+                                <li>品茗現煮刺蔥茶</li>
+                                <li>原始弓箭射箭體驗</li>
+                                <li>口簧琴與歌唱即興表演</li>
+                            </ul>
+                            <p style="padding-top: 12px; padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                詳請聯繫尤幹瓦旦大哥。
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <figure class="row" style="background-image:url('images/20190219_133714_YukanWattanHuntingSchool.jpg')"></figure>
+                    </div>
+                </section>
+
+                <div class="clearfix"></div>
+
+                <section>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                    	<figure class="row" style="background-image:url('images/20190220_101057_Kyang.JPG')"></figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                    	<article>
+                    		<h2>金洋部落</h2>
+                            <p style="padding-top: 8px; padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <div class="clearfix"></div>
+
+                <section>
+                	<div class="col-xs-12 col-sm-6 col-md-6">
+                    	<article>
+                        	<h2>卡浪馬固工作室</h2>
+                            <p style="padding-top: 8px; padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                我們拜訪另一位在金洋的葉勝雄大哥，他也帶我們到他的營地練習射箭。葉大哥的箭有稍微經過加工，因此穩定性較高，並且使用金屬箭頭來加強穿透性。一箭射進用木頭做成的山豬身上，光是把箭拔出來都得花上九牛二虎之力。
+                            </p>
+                            <ul style="padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                <li>山：神祕湖一日遊</li>
+                                <li>水：溯溪、漂漂河、海上獨木舟</li>
+                                <li>林：南澳古道、野地紮營</li>
+                            </ul>
+                            <p style="padding-top: 12px; padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                詳請聯繫葉勝雄大哥。
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <figure class="row" style="background-image:url('images/20190220_163552_KalangmakuCamp.jpg')"></figure>
+                    </div>
+                </section>
+
+                <div class="clearfix"></div>
+
+                <section>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                    	<figure class="row" style="background-image:url('images/20190220_132856_NanaoHistoricTrail.JPG')"></figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                    	<article>
+                    		<h2>南澳古道</h2>
+                            <p style="padding-top: 8px; padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                「飛鼠晚上都會待在樹稍休息，所以你拿燈往樹梢上照，找到的機會就很大。不過今天是滿月，動物怕光，所以相較之下會比較不容易看到。」葉大哥繼續說著，「這條路是山羊走出來的。」「怎麼判斷是山羊呢？」我問。「山羊喜歡走很陡的路徑，直接從山上下到溪邊喝水，然後你看這個腳印有兩片，這個形狀是山羊的蹄。」
+                            </p>
+                            <p style="padding-left: 2vw; padding-right: 1vw; font-size: 18px;">
+                                話音剛落，我和葉大哥幾乎同時看見在這條獸徑的下方山谷中，有一對很亮很亮的光點。「是長鬃山羊。」大哥興奮地說。仔細一瞧，我甚至看見整顆山羊的頭。
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <div class="clearfix"></div>
+
+                <!-- video -->
+                <div class="video-pan text-center" lang="en">
+                    <a id="video2" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=QVXIB52jAb4',containment:'.bg-container-youtube2', showControls:false, autoPlay:false, loop:true, startAt:0, opacity:1, addRaster:false, quality:'large'}"></a>
+                    <!-- 5.0 background container autoPlay:true,  -->
+                    <div class="bg-container-youtube2"></div>  
+                	<header><a class="popup-vimeo video-button" href="https://www.youtube.com/watch?v=QVXIB52jAb4"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                    <h4>
+                        Lubuw performance by Yukan Wattan, an Atayal hunter.
+                    </h4>
+                    </header>
+                </div>
+                <!-- videos -->
+                <div class="video-pan text-center" lang="zh">
+                    <a id="video2" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=QVXIB52jAb4',containment:'.bg-container-youtube2', showControls:false, autoPlay:false, loop:true, startAt:0, opacity:1, addRaster:false, quality:'large'}"></a>
+                    <!-- 5.0 background container autoPlay:true,  -->
+                    <div class="bg-container-youtube2"></div>  
+                	<header><a class="popup-vimeo video-button" href="https://www.youtube.com/watch?v=QVXIB52jAb4"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                    <h4>
+                        泰雅獵人尤幹．瓦旦大哥吹奏口簧琴以及演唱〈思念〉
+                    </h4>
+                    </header>
+                </div>
+                <!-- videos -->
+
+                <!--slider pan -->
+<!--
+                <div class="slider-pan">
+                	<header role="title-page" class="text-center">
+                    	<h2>網友回饋</h2>
+                        <h4></br> Voice from the internet.</h4>
+                    </header>
+-->
+                    <!-- carousel -->
+<!--
+                    <div id="owl-demo" class="owl-carousel text-center" role="slider">
+
+                    	<section class="item">
+                            <article>
+                                南澳是個很棒的地方，而且當地原住民朋友也很熱情喔！南澳古道雖無法全路通行，但延途景色很不錯，是讓人很想一去再去的鄉鎮。
+                            </article>
+                            <header>
+                                <h5>許小芠</h5>
+                            </header>
+                           </section>
+                           
+                        <section class="item">
+                            <article>
+                                We are looking forward to hear from you!
+                            </article>
+                            <header>
+                                <h5>Name</h5>
+                                <h6>Affliation</h6>
+                            </header>
+                       	</section>
+                    
+                    </div>
+-->
+                    <!-- carousel -->
+<!--
+                </div>
+-->
+                <!--slider pan -->
+            </section>
+            <!-- section-two -->
+
+            <!-- section-three: Flexible Plans -->
+            <!-- section-three -->
+
+            <!-- section-five -->
+<!--
+            <section class="section-five" id="section-five">
+            	<div class="container">
+                	<header role="title-page" class="text-center">
+                        <h2>南澳小專欄</h2>
+                        <h4></br> Topics on public science related to <br/>life and travel.</h4>
+                    </header>
+                    <header class="col-xs-6 col-sm-6 col-md-4">
+                        <p>
+                            <a class="popup-vimeo" href="maps">地圖</a>
+                        </p>
+                    </header>
+                </div>
+            </section>
+-->            
+            <!-- section-five -->
+
+            <!-- section-four -->
+<!--
+            <section class="section-four" id="section-four">
+            	<div class="container">
+                    <header role="title-page" class="text-center">
+                        <h2>南澳在地達人</h2>
+                        <h4></br> People who are passionate about bringing <br/> the best for visiters.</h4>
+                    </header>
+                    <div class="team-pan row">
+                        <section class="col-xs-12 col-sm-6 col-md-3">
+                        	<figure><img src="http://placehold.it/249x263" alt="" class=" img-responsive"/></figure>
+                        	<header>
+                            	<h5>尤幹瓦旦 / 羅文清</h5>
+								<h6>尤幹瓦旦獵人學校</h6>
+                                <a href="https://www.facebook.com/1769446119790558/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/luochin0912134272/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </header>
+                        </section>
+                        <section class="col-xs-12 col-sm-6 col-md-3">
+                        	<figure><img src="http://placehold.it/249x263" alt="" class=" img-responsive"/></figure>
+                        	<header>
+                            	<h5>葉勝雄</h5>
+								<h6>卡浪馬固工作室</h6>
+                                <a href="https://www.facebook.com/KaLangMaGu/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </header>
+                        </section>
+                        <section class="col-xs-12 col-sm-6 col-md-3">
+                        	<figure><img src="http://placehold.it/249x263" alt="" class=" img-responsive"/></figure>
+                        	<header>
+                            	<h5>Uma</h5>
+								<h6>莎韻廚房</h6>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            </header>
+                        </section>
+                        <section class="col-xs-12 col-sm-6 col-md-3">
+                        	<figure><img src="http://placehold.it/249x263" alt="" class=" img-responsive"/></figure>
+                        	<header>
+                            	<h5>姜彤妤</h5>
+								<h6>莎韻廚房</h6>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            </header>
+                        </section>
+                        <section class="col-xs-12 col-sm-6 col-md-3">
+                        	<figure><img src="http://placehold.it/249x263" alt="" class=" img-responsive"/></figure>
+                        	<header>
+                            	<h5>江祖恩</h5>
+								<h6>愛南澳生態旅遊發展協會</h6>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            </header>
+                        </section>
+                        <section class="col-xs-12 col-sm-6 col-md-3">
+                        	<figure><img src="http://placehold.it/249x263" alt="" class=" img-responsive"/></figure>
+                        	<header>
+                            	<h5>葛米珊拉哈</h5>
+								<h6>愛南澳生態旅遊發展協會</h6>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            </header>
+                        </section>
+                        <section class="col-xs-12 col-sm-6 col-md-3">
+                        	<figure><img src="http://placehold.it/249x263" alt="" class=" img-responsive"/></figure>
+                        	<header>
+                            	<h5>豊櫻子</h5>
+								<h6>金岳社區發展協會</h6>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            </header>
+                        </section>
+                        <section class="col-xs-12 col-sm-6 col-md-3">
+                        	<figure><img src="http://placehold.it/249x263" alt="" class=" img-responsive"/></figure>
+                        	<header>
+                            	<h5>柳怡雯</h5>
+								<h6>金岳社區發展協會</h6>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            </header>
+                        </section>
+                    </div>
+                </div>
+            </section>
+-->
+            <!-- section-four -->
+
+            <!-- section-six -->
+<!--
+            <section class="section-six" id="section-six">
+-->
+                <!-- expense -->
+<!--
+            	<div class="container">
+                	 <header role="title-page" class="text-center">
+                        <h2>裝備與開銷</h2>
+                        <h4></br> Here are what you need for a 3-day trip to Nan'ao.</h4>
+-->
+                        <!-- 建議 to 健行筆記 & 南澳-->
+<!--
+                    </header>
+                </div>
+-->
+                <!-- expense -->
+<!--
+            </section>
+-->
+            <!-- section-six -->
+
+            <!-- section-seven -->
+            <section class="section-seven" id="section-seven">
+            	<div class="container">
+                	 <header role="title-page" class="text-center" style="margin-bottom:100px;">
+                        <h2>團隊成員</h2>
+                        <h4></br> Our Team</h4>
+                    </header>
+                    <div class="team-pan row">
+                        <!-- Lucky Chang -->
+                        <section class="col-xs-12 col-sm-6 col-md-6" style="padding-bottom: 2vw;">
+                        	<figure class="col-xs-6 col-sm-6 col-md-6"><img src="images/team/luckychang.JPG" alt="" class=" img-responsive"/></figure>
+                        	<header class="col-xs-6 col-sm-6 col-md-6" style="text-align:left;">
+                            	<h5>Lucky Chang</h5>
+                                <h6>攝錄影、網頁製作、行程規劃、實地踏查</h6>
+                                <!--<a href="https://www.facebook.com/whlchang"><i class="fa fa-facebook" aria-hidden="true"></i></a>-->
+                            </header>
+                        </section>
+                        <!-- Liam Lin -->
+                        <section class="col-xs-12 col-sm-6 col-md-6" style="padding-bottom: 2vw;">
+                        	<figure class="col-xs-6 col-sm-6 col-md-6"><img src="images/team/liamlin.JPG" alt="" class=" img-responsive"/></figure>
+                        	<header class="col-xs-6 col-sm-6 col-md-6" style="text-align:left;">
+                            	<h5>Liam Lin</h5>
+								<h6>文字編輯、專欄寫作、實地踏查</h6>
+                            </header>
+                        </section>
+                        <!-- Alan Cheng -->
+                        <section class="col-xs-12 col-sm-6 col-md-6" style="padding-bottom: 2vw;">
+                        	<figure class="col-xs-6 col-sm-6 col-md-6"><img src="images/team/alancheng.JPG" alt="" class=" img-responsive"/></figure>
+                        	<header class="col-xs-6 col-sm-6 col-md-6" style="text-align:left;">
+                            	<h5>Alan Cheng</h5>
+								<h6>攝錄影、影像剪輯、實地踏查</h6>
+                            </header>
+                        </section>
+                        <!-- Yu-Ting Chuang -->
+                        <section class="col-xs-12 col-sm-6 col-md-6" style="padding-bottom: 2vw;">
+                        	<figure class="col-xs-6 col-sm-6 col-md-6"><img src="images/team/yutingchuang.jpg" alt="" class=" img-responsive"/></figure>
+                        	<header class="col-xs-6 col-sm-6 col-md-6" style="text-align:left;">
+                            	<h5>Rita Chuang</h5>
+								<h6>行程規劃、文字編輯、留守聯絡人</h6>
+                            </header>
+                        </section>
+                        <!-- Team Member END -->
+                    </div>
+                </div>
+            </section>
+            <!-- section-seven -->
+
+            <!-- footer -->
+            <footer role="footer" class="footer text-center">
+           		<div class="container">
+                    <p class="copy">
+						Icons made by
+						<a href="https://www.flaticon.com/authors/freepik" target="_blank"><b>Freepik</b></a> and
+						<a href="https://www.flaticon.com/authors/google" target="_blank"><b>Google</b></a>
+						from
+						<a href="http://gettemplates.co/" target="_blank"><b>www.flaticon.com</b></a>.<br>
+                        Made by <a href="https://www.facebook.com/whlchang"><b>Lucky Chang</b></a>
+                        with the template designed by <a href="http://www.designstub.com/"><b>Designstub</b></a>.<br>
+                        Copyright &copy; 2016 Sartr. All Rights Reserved.
+                    </p>
+                </div>
+            </footer>
+            <!-- footer -->
+
+        </main>
+    <!-- main -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/parallax.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+    	$('.parallax-window').parallax({});
+    </script>
+    <script src="js/main.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> 
+	<script src="js/maps.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+	<script type="text/javascript" src="js/video.js"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+	<script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+	<script src="js/jquery.contact.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/html5shiv.min.js" type="text/javascript"></script>
+	<script src="js/visiable-menu.js" type="text/javascript"></script>
+
+  </body>
+
+</html>

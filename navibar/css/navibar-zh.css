@@ -1,0 +1,101 @@
+ul#nav-zh:before,
+ul#nav-zh:after {
+    content: "";
+    display: table;
+}
+
+ul#nav-zh:after {
+    clear: both;
+}
+
+ul#nav-zh li:hover > a {
+    background-color:rgba(85, 55, 85, 0.80);
+    cursor: pointer;
+}
+
+*html ul#nav-zh li a:hover { /* IE6 only */
+    background-color:rgba(85, 55, 85, 0.80);
+    cursor: pointer;
+}
+
+ul#nav-zh ul {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    transition: all .2s ease-in-out;
+}
+
+ul#nav-zh li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+ul#nav-zh ul li {
+    float: none;
+    display: block;
+}
+
+ul#nav-zh ul a {
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+    #nav-wrap-zh ul#nav-zh ul {
+        opacity: 0;
+        visibility: hidden;
+        position: block;
+        transition: all .2s ease-in-out;
+        z-index: 102;
+        clear: both;
+        float: right;
+        right: 160px;
+    }
+    
+    #nav-wrap-zh ul#nav-zh li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+        margin: 0;
+    }
+
+    #nav-wrap-zh ul#nav-zh ul#gallery {
+        top: 188px;
+    }
+
+    #nav-wrap-zh ul#nav-zh ul#blog {
+        top: 237px;
+    }
+
+    #nav-wrap-zh ul#nav-zh ul#work {
+        top: 335px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    #nav-wrap-zh ul#nav-zh {
+         height: auto;
+         display: none;
+         clear: both;
+         width: auto;
+         position: relative;
+         top: 12px;
+    }
+
+    #nav-wrap-zh ul#nav-zh ul {
+        opacity: 0;
+        visibility: hidden;
+        position: block;
+        transition: all .2s ease-in-out;
+        z-index: 102;
+        clear: both;
+        float: right;
+        right: 30px;
+    }
+
+}

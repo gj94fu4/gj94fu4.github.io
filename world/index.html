@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Fantastic World - Lucky Chang</title>
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="../img/favicon.png" >
+
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+
+<!-- font awesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Navibar -->
+<link rel="stylesheet" href="../navibar/css/fonts.css">
+<link rel="stylesheet" href="../navibar/css/navibar_full.css">
+<link rel="stylesheet" href="../navibar/css/navibar_full-zh.css">
+
+    <!-- Languages Control
+    ================================================== -->
+    <style type="text/css">
+      body.zh div[lang=en] {
+        display: none;
+      }
+      body.en div[lang=zh] {
+        display: none;
+      }
+    </style>
+
+</head>
+
+<!-- Redirecting HTTP to HTTPS -->
+<script src="../js/redirect2https.js"></script>
+
+<body class="en">
+
+	<!-- Navibar -->
+	<div lang="en">
+	<div w3-include-html="../navibar/navibar.html"></div>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script> w3.includeHTML(); </script>
+	</div>
+	<div lang="zh">
+	<div w3-include-html="../navibar/navibar_zh.html"></div>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script> w3.includeHTML(); </script>
+	</div>
+
+    <!-- Language from URL
+    ================================================== -->
+    <script type="text/javascript">
+        var url = location.href;
+        if(url.indexOf('?') != -1){
+            var lang = "";
+            var ary = url.split('?')[1].split('&');
+            for(i = 0; i <= ary.length-1; i++){
+                if(ary[i].split('=')[0] == 'lang')
+                    lang = ary[i].split('=')[1];
+            }
+            if(lang == 'zh'){
+                document.body.className = 'zh';
+            }
+        }
+    </script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/animate/animate.css" />
+    <link rel="stylesheet" href="assets/animate/set.css" />
+    
+    <!-- gallery -->
+    <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+    
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <!-- modal -->
+    <link rel="stylesheet" href="assets/modal.css">
+
+    <!-- Mouse Keyboard Forbidden -->
+    <script src="../js/nomousekeyboard.js"></script>
+
+
+<!-- works - en -->
+<div id="works"  class="clearfix grid" lang="en"> 
+<h1 class="text-center wowload fadeInUp">Fantastic World</h1>
+<!-- Style List:  lily, sadie, roxy, bubba, romeo, layla, honey, 
+     oscar, marley, ruby, milo, dexter, sarah, zoe, chico-->
+    <!-- original backup
+    figure class="effect-oscar  wowload fadeInUp">
+        <img src="images/portfolio/1.jpg" alt="img01"/>
+        <figcaption>
+            <h2>Taiwan</h2>
+            <p><a href="https://luckyworld.pixieset.com/taiwan/" title="Taiwan">View more</a></p>
+        </figcaption>
+    </figure> -->
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20130330_Taroko_72.JPG" alt="Taiwan"/>
+        <figcaption>
+            <h2>Taiwan</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/taiwan/city/#page-container'">City</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/taiwan/countryside/#page-container'">Countryside</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/taiwan/mountain/#page-container'">Mountain</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/taiwan/ocean/#page-container'">Ocean</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20140518_3271_Dotonbori.JPG" alt="Japan"/>
+        <figcaption>
+            <h2>Japan</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/japan/kansai/#page-container'">Kansai</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/japan/kanto/#page-container'">Kanto</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/japan/chubu/#page-container'">Chubu</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20130624_0081_TPE-ITO.JPG" alt="UnitedStates"/>
+        <figcaption>
+            <h2>United States</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/unitedstates/hawaii/#page-container'">Hawaii</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/unitedstates/california/#page-container'">California</a>
+            </p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150203_010709_Tallinn.JPG" alt="Estonia"/>
+        <figcaption>
+            <h2>Estonia</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/estonia/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150205_162008_Sigulda.JPG" alt="Latvia"/>
+        <figcaption>
+            <h2>Latvia</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/latvia/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150209_174851_Vilnius.JPG" alt="Lithuania"/>
+        <figcaption>
+            <h2>Lithuania</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/lithuania/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150213_104111_Wroclaw.JPG" alt="Poland"/>
+        <figcaption>
+            <h2>Poland</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/poland/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150201_145109_Dubai.JPG" alt="UnitedArabEmirates"/>
+        <figcaption>
+            <h2>United Arab Emirates</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/unitedarabemirates/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150402_2017_NhaTrang.JPG" alt="Vietnam"/>
+        <figcaption>
+            <h2>Vietnam</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/vietnam/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150626_8772_MarinaBaySands.JPG" alt="Singapore"/>
+        <figcaption>
+            <h2>Singapore</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/singapore/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150705_9351_KLCC.JPG" alt="Malaysia"/>
+        <figcaption>
+            <h2>Malaysia</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/malaysia/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20160317_7331_ChediLuangWorawihanTemple.JPG" alt="Thailand"/>
+        <figcaption>
+            <h2>Thailand</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/thailand/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20160903_6484_KingsCross.JPG" alt="UnitedKingdom"/>
+        <figcaption>
+            <h2>United Kingdom</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/unitedkingdom/england/#page-container'">England</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/unitedkingdom/scotland/#page-container'">Scotland</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20160910_8118_ArcDeTriomphe.JPG" alt="France"/>
+        <figcaption>
+            <h2>France</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/france/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20181219_7103_Pamplona.JPG" alt="Spain"/>
+        <figcaption>
+            <h2>Spain</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/spain/catalonia/#page-container'">Catalonia</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/spain/navarre/#page-container'">Navarre</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20160914_8979_PonteDellAccademia.JPG" alt="Italy"/>
+        <figcaption>
+            <h2>Italy</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/italy/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20181229_8530_CasinoMonteCarlo.JPG" alt="Monaco"/>
+        <figcaption>
+            <h2>Monaco</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/monaco/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20181220_7234_AndorraLaVella.JPG" alt="Andorra"/>
+        <figcaption>
+            <h2>Andorra</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/andorra/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20161226_6444_HallstattRailwayStation.JPG" alt="Austria"/>
+        <figcaption>
+            <h2>Austria</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/austria/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20161228_7527_FishermansBastion.JPG" alt="Hungary"/>
+        <figcaption>
+            <h2>Hungary</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/hungary/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20161230_7854_ManesuvMost.JPG" alt="CzechRepublic"/>
+        <figcaption>
+            <h2>Czech Republic</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/czechrepublic/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20170103_8876_KleineScheidegg.JPG" alt="Switzerland"/>
+        <figcaption>
+            <h2>Switzerland</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/switzerland/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20190103_120002_Djurgardsbron.JPG" alt="Sweden"/>
+        <figcaption>
+            <h2>Sweden</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/sweden/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20190105_134918_Nyhavn.JPG" alt="Danmark"/>
+        <figcaption>
+            <h2>Danmark</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/danmark/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20190109_132525_EastSideGallery.JPG" alt="Germany"/>
+        <figcaption>
+            <h2>Germany</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/germany/#page-container'">View more</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20181023_5242_Oia.JPG" alt="Germany"/>
+        <figcaption>
+            <h2>Greece</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/greece/aegean/#page-container'">Aegean</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/greece/attica/#page-container'">Attica</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/greece/thessalycg/#page-container'">Thessaly CG</a></p>
+        </figcaption>
+    </figure>
+
+</div>
+
+<!-- works - zh -->
+<div id="works"  class="clearfix grid" lang="zh"> 
+<h1 class="text-center wowload fadeInUp">旅途風情</h1>
+<!-- Style List:  lily, sadie, roxy, bubba, romeo, layla, honey, 
+     oscar, marley, ruby, milo, dexter, sarah, zoe, chico-->
+    <!-- original backup
+    figure class="effect-oscar  wowload fadeInUp">
+        <img src="images/portfolio/1.jpg" alt="img01"/>
+        <figcaption>
+            <h2>Taiwan</h2>
+            <p><a href="https://luckyworld.pixieset.com/taiwan/" title="Taiwan">更多</a></p>
+        </figcaption>
+    </figure> -->
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20130330_Taroko_72.JPG" alt="Taiwan"/>
+        <figcaption>
+            <h2>臺灣</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/taiwan/city/#page-container'">城市</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/taiwan/countryside/#page-container'">鄉村</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/taiwan/mountain/#page-container'">山岳</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/taiwan/ocean/#page-container'">海洋</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20140518_3271_Dotonbori.JPG" alt="Japan"/>
+        <figcaption>
+            <h2>日本</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/japan/kansai/#page-container'">關西</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/japan/kanto/#page-container'">關東</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/japan/chubu/#page-container'">中部</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20130624_0081_TPE-ITO.JPG" alt="UnitedStates"/>
+        <figcaption>
+            <h2>美國</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/unitedstates/hawaii/#page-container'">夏威夷</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/unitedstates/california/#page-container'">加利福尼亞</a>
+            </p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150203_010709_Tallinn.JPG" alt="Estonia"/>
+        <figcaption>
+            <h2>愛沙尼亞</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/estonia/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150205_162008_Sigulda.JPG" alt="Latvia"/>
+        <figcaption>
+            <h2>拉脫維亞</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/latvia/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150209_174851_Vilnius.JPG" alt="Lithuania"/>
+        <figcaption>
+            <h2>立陶宛</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/lithuania/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150213_104111_Wroclaw.JPG" alt="Poland"/>
+        <figcaption>
+            <h2>波蘭</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/poland/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150201_145109_Dubai.JPG" alt="UnitedArabEmirates"/>
+        <figcaption>
+            <h2>阿聯酋</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/unitedarabemirates/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150402_2017_NhaTrang.JPG" alt="Vietnam"/>
+        <figcaption>
+            <h2>越南</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/vietnam/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150626_8772_MarinaBaySands.JPG" alt="Singapore"/>
+        <figcaption>
+            <h2>新加坡</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/singapore/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20150705_9351_KLCC.JPG" alt="Malaysia"/>
+        <figcaption>
+            <h2>馬來西亞</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/malaysia/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20160317_7331_ChediLuangWorawihanTemple.JPG" alt="Thailand"/>
+        <figcaption>
+            <h2>泰國</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/thailand/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20160903_6484_KingsCross.JPG" alt="UnitedKingdom"/>
+        <figcaption>
+            <h2>英國</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/unitedkingdom/england/#page-container'">英格蘭</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/unitedkingdom/scotland/#page-container'">蘇格蘭</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20160910_8118_ArcDeTriomphe.JPG" alt="France"/>
+        <figcaption>
+            <h2>法國</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/france/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20181219_7103_Pamplona.JPG" alt="Spain"/>
+        <figcaption>
+            <h2>西班牙</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/spain/catalonia/#page-container'">加泰隆尼亞</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/spain/navarre/#page-container'">納瓦拉</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20160914_8979_PonteDellAccademia.JPG" alt="Italy"/>
+        <figcaption>
+            <h2>義大利</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/italy/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20181229_8530_CasinoMonteCarlo.JPG" alt="Monaco"/>
+        <figcaption>
+            <h2>摩納哥</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/monaco/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20181220_7234_AndorraLaVella.JPG" alt="Andorra"/>
+        <figcaption>
+            <h2>安道爾</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/andorra/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20161226_6444_HallstattRailwayStation.JPG" alt="Austria"/>
+        <figcaption>
+            <h2>奧地利</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/austria/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20161228_7527_FishermansBastion.JPG" alt="Hungary"/>
+        <figcaption>
+            <h2>匈牙利</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/hungary/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20161230_7854_ManesuvMost.JPG" alt="CzechRepublic"/>
+        <figcaption>
+            <h2>捷克</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/czechrepublic/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20170103_8876_KleineScheidegg.JPG" alt="Switzerland"/>
+        <figcaption>
+            <h2>瑞士</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/switzerland/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20190103_120002_Djurgardsbron.JPG" alt="Sweden"/>
+        <figcaption>
+            <h2>瑞典</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/sweden/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20190105_134918_Nyhavn.JPG" alt="Danmark"/>
+        <figcaption>
+            <h2>丹麥</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/danmark/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20190109_132525_EastSideGallery.JPG" alt="Germany"/>
+        <figcaption>
+            <h2>德國</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/germany/#page-container'">更多</a></p>
+        </figcaption>
+    </figure>
+    <figure class="effect-marley  wowload fadeInUp">
+        <img src="images/portfolio/20181023_5242_Oia.JPG" alt="Germany"/>
+        <figcaption>
+            <h2>希臘</h2>
+            <p><a OnClick="window.location='https://luckyworld.pixieset.com/greece/aegean/#page-container'">愛琴群島</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/greece/attica/#page-container'">阿提卡</a>
+               <a OnClick="window.location='https://luckyworld.pixieset.com/greece/thessalycg/#page-container'">色薩利中希臘</a></p>
+        </figcaption>
+    </figure>
+
+</div>
+
+<!-- works Ends -->
+
+
+<!-- Footer Starts -->
+    <div class="footer text-center spacer"><p>Made by <strong>Lucky Chang</strong>.
+    Copyright &copy; 2014 Cyrus Creative Studio. All Rights Reserved.</p></div>
+<!-- # Footer Ends -->
+
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <!-- The container for the modal slides -->
+	<div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+	<!-- <h3 class="title">Title</h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a> -->
+    <a class="close">×</a>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+</div>
+
+
+<!-- jquery -->
+<script src="assets/jquery.js"></script>
+
+<!-- wow script -->
+<script src="assets/wow/wow.min.js"></script>
+
+
+<!-- boostrap -->
+<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
+
+<!-- jquery mobile -->
+<script src="assets/mobile/touchSwipe.min.js"></script>
+<script src="assets/respond/respond.js"></script>
+
+<!-- gallery -->
+<script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
+
+<!-- custom script -->
+<script src="assets/script.js"></script>
+
+</body>
+</html>

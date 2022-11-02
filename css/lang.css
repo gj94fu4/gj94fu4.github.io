@@ -1,0 +1,7 @@
+body.zh div[lang=en] {
+	display: none;
+}
+
+body.en div[lang=zh] {
+	display: none;
+}

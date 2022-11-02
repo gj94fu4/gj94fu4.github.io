@@ -1,0 +1,813 @@
+<!DOCTYPE HTML>
+<!--
+	Justice by gettemplates.co
+	Twitter: http://twitter.com/gettemplateco
+	URL: http://gettemplates.co
+-->
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AMiBA On-site Operation - Lucky Chang</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="gettemplates.co" />
+    <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400, 900" rel="stylesheet"> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- Language Filter -->
+    <style type="text/css">
+      body.zh div[lang=en] {
+        display: none;
+      }
+      body.en div[lang=zh] {
+        display: none;
+      }
+    </style>
+
+	</head>
+
+	<!-- Redirecting HTTP to HTTPS -->
+	<script src="../../js/redirect2https.js"></script>
+
+	<body class="en">
+
+    <!-- Language from URL -->
+    <script type="text/javascript">
+        var url = location.href;
+        if(url.indexOf('?') != -1){
+            var lang = "";
+            var ary = url.split('?')[1].split('&');
+            for(i = 0; i <= ary.length-1; i++){
+                if(ary[i].split('=')[0] == 'lang')
+                    lang = ary[i].split('=')[1];
+            }
+            if(lang == 'zh'){
+                document.body.className = 'zh';
+            }
+        }
+    </script>
+
+	<!-- Mouse Keyboard Forbidden -->
+	<script src="../../js/nomousekeyboard.js"></script>
+		
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+
+	<nav class="gtco-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<div id="gtco-logo">
+						<a href="../../">
+							<img src="../../img/favicon_green.png" style="width:32px" title="LC"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-10 text-right menu-1 main-nav" lang="en">
+					<ul>
+							<li><a href="../../">Home</a></li>
+							<li><a href="../../profile/">Profile</a></li>
+							<li><a href="../../world/">Gallery</a></li>
+							<li><a onmouseover="switchMenu(this,'blog')" onclick="switchMenu(this,'blog')">Blog</a>
+								<ul id="blog">
+									<li><a href="../../blog/escapade/">The Grand Escapade</a></li>
+									<li><a href="../../blog/fairytale/">The Fairy Tale</a></li>
+									<li><a href="../../blog/hoshino/">Hoshino Story</a></li>
+									<li><a href="../../blog/island/">Island Diary</a></li>
+								</ul>
+							</li>
+							<li><a href="../../project/">Project</a></li>
+							<li><a onclick="document.body.className='zh'" style="cursor: pointer">中/EN</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-10 text-right menu-1 main-nav" lang="zh">
+					<ul>
+							<li><a href="../../">首頁</a></li>
+							<li><a href="../../profile/?lang=zh">關於我</a></li>
+							<li><a href="../../world/?lang=zh">相簿</a></li>
+							<li><a onmouseover="switchMenu(this,'blog')" onclick="switchMenu(this,'blog')">文字</a>
+								<ul id="blog">
+									<li><a href="../../blog/escapade/?lang=zh">大壯遊</a></li>
+									<li><a href="../../blog/fairytale/?lang=zh">半路上的童話故事</a></li>
+									<li><a href="../../blog/hoshino/?lang=zh">星野遊學</a></li>
+									<li><a href="../../blog/island/?lang=zh">荒島札記</a></li>
+								</ul>
+							</li>
+							<li><a href="../../project/?lang=zh">業餘項目</a></li>
+							<li><a onclick="document.body.className='en'" style="cursor: pointer">中/EN</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+
+	<section id="gtco-hero" class="gtco-cover" style="background-image: url(images/20140414_7413_LunarEclipse.JPG);"  data-section="home"  data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row" lang="en">
+				<div class="col-md-12 col-md-offset-0 text-center">
+					<div class="display-t">
+						<div class="display-tc">
+							<h1 class="animate-box" data-animate-effect="fadeIn">
+								AMiBA On-site Operation
+							</h1>
+							<h2>
+								The "time machine" for astronomers and cosmologists to see the early universe.
+							</h2>
+							<!-- movie HERE -->
+							<p class="gtco-video-link animate-box" data-animate-effect="fadeIn">
+							<a href="https://www.youtube.com/watch?v=79pyRTGWnMQ" class="popup-vimeo">
+							<i class="icon-controller-play"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" lang="zh">
+				<div class="col-md-12 col-md-offset-0 text-center">
+					<div class="display-t">
+						<div class="display-tc">
+							<h1 class="animate-box" data-animate-effect="fadeIn">
+								阿米巴陣列駐站觀測
+							</h1>
+							<h2>
+								宇宙科學家探索早期宇宙的「時間機器」！
+							</h2>
+							<!-- movie HERE -->
+							<p class="gtco-video-link animate-box" data-animate-effect="fadeIn">
+							<a href="https://www.youtube.com/watch?v=79pyRTGWnMQ" class="popup-vimeo">
+							<i class="icon-controller-play"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="gtco-about" data-section="about">
+		<div class="container" lang="en">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+					<h1>What is AMiBA</h1>
+					<p class="sub"><br/>
+						AMiBA
+						(<span style="color:red"><b>A</b></span>rray for 
+						<span style="color:red"><b>Mi</b></span>crowave 
+						<span style="color:red"><b>B</b></span>ackground 
+						<span style="color:red"><b>A</b></span>nisotropy),
+						a microwave telescope located at Mauna Loa Observatory (MLO), 
+						is designed for measuring the first light of our universe.
+					</p>
+					<p class="subtle-text animate-box col-md-offset-3" data-animate-effect="fadeIn">AMiBA</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 animate-box row-about" data-animate-effect="fadeInLeft">
+					<div class="img-shadow">
+						<img src="images/20141028_8348_MaunaLoaObservatory.JPG" class="img-responsive">
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 animate-box row-about" data-animate-effect="fadeInLeft">
+					<h2 class="heading-colored">AMiBA and its science</h2>
+					<div style="text-align:justify">
+					<p>
+						AMiBA was constructed by Institute of Astronomy and Astrophysics, Academia Sinica (ASIAA) 
+						with a couple collaborators including Department of Physics, National Taiwan University (NTU).
+						Routine science operation took place in 2007 to 2008 (primary) and 2011 to 2014 (upgraded).
+					</p>
+					<p>
+						The purpose of AMiBA was to precisely measure the photons of cosmic microwave background (CMB) 
+						which were emitted from the early universe and warmed up by galaxy clusters.
+						Such photons told people how our universe grew up and what it looks like on large scale today.
+						We used AMiBA data to identified the density and temperature of the hot gas in those clusters, 
+						which traces the underlying dark matter distribution.
+					</p>
+					<p><a href="http://ytla.asiaa.sinica.edu.tw/" class="read-more" target="_blank">Read more <i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" lang="zh">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+					<h1>什麼是阿米巴？</h1>
+					<p class="sub"><br/>
+						阿米巴陣列（AMiBA，
+						<span style="color:red"><b>A</b></span>rray for 
+						<span style="color:red"><b>Mi</b></span>crowave 
+						<span style="color:red"><b>B</b></span>ackground 
+						<span style="color:red"><b>A</b></span>nisotropy）
+						坐落於美國夏威夷州毛納羅亞觀測站，
+						是一座用來偵測來自宇宙初生之光的微波望遠鏡干涉陣列。
+					</p>
+					<p class="subtle-text animate-box col-md-offset-3" data-animate-effect="fadeIn">AMiBA</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 animate-box row-about" data-animate-effect="fadeInLeft">
+					<div class="img-shadow">
+						<img src="images/20141028_8348_MaunaLoaObservatory.JPG" class="img-responsive">
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 animate-box row-about" data-animate-effect="fadeInLeft">
+					<h2 class="heading-colored">阿米巴及其科學目標</h2>
+					<div style="text-align:justify">
+					<p>
+						阿米巴陣列望遠鏡是由中央研究院天文及天文物理研究所，以及國立台灣大學物理系共同設計建造，
+						並與國際上許多研究單位合作運轉。初代機於 2007 年開始投入科學觀測，2011 年進行設備升級，
+						最終於 2014 年結束運轉並退役。
+					</p>
+					<p>
+						阿米巴陣列的科學目標是精準地量測來自宇宙早期，並且被星系團局部加熱的宇宙微波背景輻射。
+						這些光線能夠揭露宇宙是如何成長，直到變成今日所見，特別是在大尺度上的樣貌。
+						我們能夠利用阿米巴陣列的觀測資料，來計算遠方星系團中熱氣體的密度和溫度，
+						並且由此來了解所謂「暗物質」在重力系統中的分布。
+					</p>
+					<p><a href="http://ytla.asiaa.sinica.edu.tw/" class="read-more" target="_blank">了解更多 <i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="gtco-practice-areas" data-section="practice-areas">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn" lang="en">
+					<h1>What we did during the operation</h1>
+					<p class="sub"><br/>
+						Based in the downtown Hilo, we headed to the AMiBA site once a week for a three- or four-night observation.
+						Measurment started at around 6pm and roughly took 12 hours.
+					</p>
+					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Works</p>
+				</div>
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn" lang="zh">
+					<h1>駐站觀測時都在做什麼呢？</h1>
+					<p class="sub"><br/>
+						我們每個禮拜都會從夏威夷大島的希洛鎮前往阿米巴基地，每一次連續值勤三或四個夜晚，
+						而每天的觀測從下午六點開始，到隔天上午六點左右結束。
+					</p>
+					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Works</p>
+				</div>
+			</div>
+			<div class="row" lang="en">
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="icons/weather.png" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="gtco-copy">
+							<h3>Monitoring Weather</h3>
+							<div style="text-align:justify">
+							<p>
+								Water vapor in the atmosphere would seriously absorb microwave,
+								therefore, non-cloudy weather with low humidity (typically below 40%) 
+								was required for our observation.
+								We won't uncover the shield of observatory if the weather condition was bad such as cloudy or rainy.
+							</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="icons/tools.png" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="gtco-copy">
+							<h3>Preparing Observation</h3>
+							<div style="text-align:justify">
+							<p>
+								To avoid thermal deformation during observation,
+								we opened the shield of observatory and lifted the platform of detectors 
+								to the standby position to let the machine reach thermal equilibrium with the environment.
+								Then we checked the status of all receivers and offlined the bad ones.
+							</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="icons/observatory.png" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="gtco-copy">
+							<h3>Measuring CMB Signals</h3>
+							<div style="text-align:justify">
+							<p>
+								Followed the observational plan, we sent commands to manipulate the machine.
+								There were two equal-time patches in a detection,
+								one was directly measuring signals from a galaxy cluster and another one was measuring signals 
+								from a blank sky beside the galaxy cluster.
+							</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="icons/telescope.png" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="gtco-copy">
+							<h3>Collecting Calibration Date</h3>
+							<div style="text-align:justify">
+							<p>
+								Calibrators played an important role of standard candles
+								which set references to calibrate strength and phase of the signals.
+								We used the planets in the solar system as the calibrators
+								because they were bright enough and their real-time properties were well-known.
+							</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="icons/report.png" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="gtco-copy">
+							<h3>Writing Daily Reports</h3>
+							<div style="text-align:justify">
+							<p>
+								The daily report recorded the weather conditions, status of the instruments, and real observational schedule.
+								It also demonstrated the fettle of all baselines of the interferometer as simple diagrams.
+								We posted the report on our science blog even there was no observation.
+							</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="icons/website.png" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="gtco-copy">
+							<h3>Restoring Instruments</h3>
+							<div style="text-align:justify">
+							<p>
+								Parked the platform of receivers, closed the shield of observatory, put the covers back to optical telescopes,
+								and turned off the machine, we called it a "day" at dawn.
+								After completed the standard operating procedure, we would have breakfast and went to bed.
+							</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="row" lang="zh">
+				<div class="col-md-6">
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="icons/weather.png" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="gtco-copy">
+							<h3>關注天氣</h3>
+							<div style="text-align:justify">
+							<p>
+								大氣層中的水氣會嚴重吸收微波訊號，因此觀測必須在晴朗且低濕度（原則上須低於 40%）的環境中進行。
+								如果天氣條件不佳，例如多雲、降雨，甚至下雪，我們就不會打開觀測站的遮罩進行觀測。
+							</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="icons/tools.png" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="gtco-copy">
+							<h3>準備觀測工作</h3>
+							<div style="text-align:justify">
+							<p>
+								為了避免日落前後的氣溫差異造成儀器形變，我們會在午後就打開觀測站的遮罩，
+								並將載有探測器的平台升起至待命位置，讓儀器能夠藉由充分的空氣對流與環境達到熱平衡。
+								接著我們會確認每一個探測器的運作溫度及暗電流干涉狀態，並且停止接收來自異常探測器的訊號。
+							</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="icons/observatory.png" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="gtco-copy">
+							<h3>測量宇宙為波背景</h3>
+							<div style="text-align:justify">
+							<p>
+								正式觀測時，我們會根據觀測計劃將指令送達阿米巴的控制系統。
+								每一組資料都是由兩次歷時相同的曝光所組成，其中一次直接測量來自星系團方向的訊號，
+								另一次則是測量鄰近該星系團的空白天區。
+							</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="icons/telescope.png" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="gtco-copy">
+							<h3>蒐集校正資校</h3>
+							<div style="text-align:justify">
+							<p>
+								校正資料和宇宙微波背景同樣重要，因為它可以用來校正訊號的強度與相位。
+								我們通常會用太陽系中的行星當作校正的基準，主要是因為它們夠亮，
+								而且人們也能夠即時掌握每一顆行星的物理特性。
+							</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="icons/report.png" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="gtco-copy">
+							<h3>撰寫操作日誌</h3>
+							<div style="text-align:justify">
+							<p>
+								將觀測的情形與操作步驟記錄下來，對於事後分析資料有很大幫助，特別是排除疑難雜症的時候，
+								因此我們會在每天觀測結束時撰寫操作日誌，記錄天氣條件、儀器狀態，以及實際運作的行程，並發布在專用部落格上。
+								為了能夠迅速釐清當天的儀器狀態，我們也會將基線暗電流干涉圖放在日誌中。
+							</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="gtco-practice-area-item animate-box">
+						<div class="gtco-icon">
+							<img src="icons/website.png" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+						</div>
+						<div class="gtco-copy">
+							<h3>復原儀器</h3>
+							<div style="text-align:justify">
+							<p>
+								將儀器回歸原位，關閉觀測站遮罩，蓋上光學望遠鏡的主鏡蓋，並且將控制系統關機，一天的工作就完成了！
+								下崗後，我們會去吃早餐，享受寧靜的清晨時光，然後洗漱就寢。
+							</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="gtco-our-team" data-section="our-team">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn" lang="en">
+					<h1>My co-workers</h1>
+					<p class="sub"><br/>
+						My advisor Professor Jiun-Huei Proty Wu led the AMiBA data-analysing team in NTU
+						and thus sent students to the AMiBA site as on-site scientists working with local operators.
+					</p>
+					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Team</p>
+				</div>
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn" lang="zh">
+					<h1>我的工作夥伴</h1>
+					<p class="sub"><br/>
+						吳俊輝老師是我的學位論文指導教授，他領導台大物理系團隊進行阿米巴資料分析，
+						並安排團隊成員到觀測現場與當地科學家和操作員學習。
+					</p>
+					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Team</p>
+				</div>
+			</div>
+
+			<div class="row team-item gtco-team-reverse">
+				<div class="col-md-4 col-md-push-8 animate-box" data-animate-effect="fadeInRight">
+					<div class="img-shadow">
+						<img src="images/jlyeh.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+				</div>
+				<div class="col-md-7 col-md-pull-4 animate-box" data-animate-effect="fadeInRight" style="text-align:justify" lang="en">
+					<h3>Jia-Long Johnny Yeh</h3>
+					<p>
+						Johnny travelled with me to the AMiBA site from April to May, 2014
+						when he was a doctoral student advised by Professor Jiun-Huei Proty Wu.
+						His expert was in cosmic string, in particular the induced CMB B-mode polarization.
+						Johnny is good at programming.
+						His superb programming skill enabled him to perform numerical simulations of cosmic strings
+						on large scale with high resilution and dynamical range.
+						He got the doctoral degree and started to work in WorldQuant Research LLC Taiwan Branch
+						as a quantitative finance researcher in 2017.
+					</p>
+					<p>
+						Johnny worked with Solomon Ho at the AMiBA site.
+						On the other hand, he developed a simple program for operators to write the daily report.
+						The program provided an efficient way to record information and dramatically reduced human error.
+					</p>
+				</div>
+				<div class="col-md-7 col-md-pull-4 animate-box" data-animate-effect="fadeInRight" style="text-align:justify" lang="zh">
+					<h3>葉佳隆（Johnny）</h3>
+					<p>
+						2014 年 4 月至 5 月時，同樣接受吳俊輝老師指導的博士生佳隆和我一起前往阿米巴進行觀測，
+						並且搭配當地操作員 Solomon Ho 上山值勤。
+						除了例行觀測工作外，佳隆還利用空閒時間開發出「觀測日誌產生器」，
+						讓操作員得以用簡單且直覺的方式快速產生觀測日誌，避免原本因人工撰寫而可能產生錯誤的情況發生，
+						並且大幅提高現場操作及事後分析的效率。
+					</p>
+					<p>
+						佳隆主要的博士研究，則是計算宇宙弦如何在宇宙微波背景 B-mode 偏振光留下印記，
+						並且透過出色的程式撰寫能力，以超高解析度和超高動態範圍數值模擬，探討大尺度結構上的宇宙弦演化。
+						2017 年獲得博士學位後，他以計量金融研究員的身分，成為美商世坤台灣分公司的一份子。
+					</p>
+				</div>
+			</div>
+
+			<div class="row team-item gtco-team">
+				<div class="col-md-4 col-md-pull-0 animate-box"  data-animate-effect="fadeInLeft">
+					<div class="img-shadow">
+						<img src="images/sppai.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+				</div>
+				<div class="col-md-7 col-md-push-1 animate-box" data-animate-effect="fadeInLeft" style="text-align:justify" lang="en">
+					<h3>Shang-Ping Pai</h3>
+					<p>
+						Shang-Ping was the partner of my first AMiBA journey from June to July, 2013
+						when he was a master student advised by Professor Jiun-Huei Proty Wu.
+						By using the data of Sunyaev–Zel'dovich (SZ) effect from AMiBA
+						and gravitational lensing from Hubble Space Telescope,
+						he produced a projected two-dimensional map of baryonic fraction for galaxy clusters
+						allowing scientists to test the dark matter models.
+						After received the master degree in 2017,
+						he became a doctoral student in Professor Wu's group.
+					</p>
+					<p>
+						Shang-Ping worked with Emmanuel Nunez at the AMiBA site during his visit in 2013.
+					</p>
+				</div>
+				<div class="col-md-7 col-md-push-1 animate-box" data-animate-effect="fadeInLeft" style="text-align:justify" lang="zh">
+					<h3>白尚平（Peter）</h3>
+					<p>
+						尚平是吳俊輝老師指導的碩士班學生，和我一起在 2013 年 6 月至 7 月間前往阿米巴現場進行觀測，
+						並與當地操作員 Emmanuel Nunez 一同在山上值勤。
+						他的研究課題是利用阿米巴陣列所觀測到的資料，分析星系團造成的 Sunyaev–Zel'dovich（SZ）效應，
+						並將他們與哈伯太空望遠鏡所觀測到的重力透鏡資料進行比較，以計算星系團的質量分布。
+						在碩士論文中，他成功計算出星系團重子質量的二維投影分布圖，並以此來驗證諸多「暗物質」模型。
+					</p>
+					<p>
+						在 2017 年獲得碩士學位後，尚平繼續留在吳老師團隊中進行博士研究。
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 col-md-pull-0 animate-box more-member" data-animate-effect="fadeInRight" style="text-align:justify" lang="en">
+					<h3>Fu-Cheng Wang</h3>
+					<p>
+						Fu-Cheng was a core member of AMiBA team since he was a doctoral student in 2004.
+						He focused his doctoral research on power spectrum and SZ effect of CMB.
+						After combining SZ data from AMiBA and several other experiments to deliver the multi-frequency analysis,
+						he yielded better estimation for distributions of dark matter in a coupled of galaxy clusters.
+						Fu-Cheng kept working with AMiBA as a postdoctoral fellow in Professor Wu's group since 2011.
+					</p>
+					<p>
+						Fu-Cheng was the first observational partner of me.
+						He directed me to operate instruments when we stayed in the AMiBA site for three nights.
+					</p>
+				</div>
+				<div class="col-md-6 col-md-pull-0 animate-box more-member" data-animate-effect="fadeInRight" style="text-align:justify" lang="zh">
+					<h3>王富正（Ven）</h3>
+					<p>
+						自從 2004 年開啟博士生涯，Ven 就是阿米巴團隊的核心成員，並且專注於研究宇宙微波背景輻射的功率頻譜以及 SZ 效應。
+						結合阿米巴的數據以及其他實驗的觀測結果，並且進行多波段分析之後，Ven 更好地估計諸多星系團的「暗物質」分布。
+						在吳俊輝老師的指導下取得博士學位後，Ven 在 2011 年開始在吳老師團隊中擔任博士後研究員，
+						持續參與阿米巴計畫，並且協助指導後續加入的學弟妹。
+					</p>
+					<p>
+						Ven 是我前往阿米巴現場的第一位值勤搭檔，並且花了三個晚上指導我如何操作阿米巴進行觀測。
+					</p>
+				</div>
+				<div class="col-md-6 col-md-pull-0 animate-box more-member" data-animate-effect="fadeInLeft" style="text-align:justify" lang="en">
+					<h3>Chih-Wei Locutus Huang</h3>
+					<p>
+						Locutus was also a core member of AMiBA team since he was a doctoral student in 2004.
+						He solved several key issues during the operation of AMiBA in the early stage
+						and studied the properties of galaxy clusters using AMiBA data.
+						After completed his doctoral research, he moved to ASIAA as a postdoctoral fellow in 2009.
+						He then became a supported scientist of Greenland Telescope (GLT) and Very Long Baseline Array (VLBA) since 2012.
+					</p>
+					<p>
+						Locutus worked with Fu-Cheng at the AMiBA site before the visit of Shang-Ping and me.
+						We completed the observation of the first time together.
+					</p>
+				</div>
+				<div class="col-md-6 col-md-pull-0 animate-box more-member" data-animate-effect="fadeInLeft" style="text-align:justify" lang="zh">
+					<h3>黃智威（Locutus）</h3>
+					<p>
+						Locutus 也是阿米巴團隊的核心成員，自 2004 年進入博士班接受吳俊輝老師指導以來，就開始參與當時還在建置階段的阿米巴計劃。
+						他解決了計劃早期所面臨的許多關鍵議題，並且利用阿米巴的觀測資料解讀星系團的物理性質。
+						獲得博士學位以後，Locutus 在 2009 年前往中研院天文所擔任博士後研究員，
+						並且在 2012 成為格陵蘭望遠鏡（GLT，Greenland Telescope）以及超長基線陣列（VLBA，Very Long Baseline Array）的支援科學家。
+					</p>
+					<p>
+						在我和尚平初次前往阿米巴之前，Locutus 和 Ven 兩人搭檔在當地值勤，我們四人也一起上山完成了第一天觀測。
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 col-md-pull-0 animate-box more-member" data-animate-effect="fadeInRight" style="text-align:justify" lang="en">
+					<h3>Anthony Ridenour</h3>
+					<p>
+						Anthony was a local operator of AMiBA and worked with me at the AMiBA site in June and July, 2013.
+
+					</p>
+				</div>
+				<div class="col-md-6 col-md-pull-0 animate-box more-member" data-animate-effect="fadeInRight" style="text-align:justify" lang="zh">
+					<h3>Anthony Ridenour</h3>
+					<p>
+						Anthony 是當地的天文台操作員，也是我在 2013 年 6 月至 7 月造訪阿米巴時的值勤搭檔。
+
+					</p>
+				</div>
+				<div class="col-md-6 col-md-pull-0 animate-box more-member" data-animate-effect="fadeInLeft" style="text-align:justify" lang="en">
+					<h3>Chia-You Shih</h3>
+					<p>
+						Chia-You was a local operator of AMiBA and worked with me at the AMiBA site from April to November, 2014.
+						He was also an amateur astronomy enthusiast and astrophotographer.
+						We observed together the lunar eclipse taking place on April 15 and October 8, 2014.
+					</p>
+					</p>
+				</div>
+				<div class="col-md-6 col-md-pull-0 animate-box more-member" data-animate-effect="fadeInLeft" style="text-align:justify" lang="zh">
+					<h3>施佳佑（CY）</h3>
+					<p>
+						CY 是常駐當地的天文台操作員，並且在我 2014 年 4 月至 11 月造訪阿米巴時，與我搭檔上山值勤。
+						他也是一位天文攝影愛好者，經常在值勤的空檔架起望遠鏡開始拍攝，我們一起在山上記錄了 2014 年 4 月 15 日以及 10 月 8 日兩次月食。
+					</p>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="gtco-our-team" data-section="contact" style="background-color: rgba(250, 252, 250, 1);">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn" lang="en">
+					<h1>More AMiBA photos</h1>
+					<p class="sub"><br/>
+						AMiBA and MLO have one of the top-three starry heaven in the world, breath-taking sea of clouds, and volcanic terrain spreading out far beyond the horizon.
+					</p>
+					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Gallery</p>
+				</div>
+				<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn" lang="zh">
+					<h1>更多阿米巴照片</h1>
+					<p class="sub"><br/>
+						阿米巴所在的毛納羅亞觀測站是世界上頂級的星空天堂，擁有令人屏息的雲海和一望無際的火山地形，甚至可以眺望數十公里外的毛納基亞山和綿延的大島海岸線，景緻十分壯觀。
+					</p>
+					<p class="subtle-text animate-box" data-animate-effect="fadeIn">Gallery</p>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-pull-0 animate-box more-photo" data-animate-effect="fadeInRight" style="text-align:justify">
+						<img src="images/gallery/20130626_0150_MaunaLoa+.JPG" class="img-responsive2" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+					<div class="col-md-6 col-md-pull-0 animate-box more-photo" data-animate-effect="fadeInLeft" style="text-align:justify">
+						<img src="images/gallery/20130702_0811_MaunaLoa.JPG" class="img-responsive2" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-pull-0 animate-box more-photo" data-animate-effect="fadeInLeft" style="text-align:justify">
+						<img src="images/gallery/20130703_0848_MaunaLoa.JPG" class="img-responsive2" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+					<div class="col-md-6 col-md-pull-0 animate-box more-photo" data-animate-effect="fadeInLeft" style="text-align:justify">
+						<img src="images/gallery/20130722_2563_MaunaLoa.JPG" class="img-responsive2" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-pull-0 animate-box more-photo" data-animate-effect="fadeInLeft" style="text-align:justify">
+						<img src="images/gallery/20130628_0755_MaunaLoa.JPG" class="img-responsive2" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+					<div class="col-md-6 col-md-pull-0 animate-box more-photo" data-animate-effect="fadeInLeft" style="text-align:justify">
+						<img src="images/gallery/20130703_0826_MaunaLoa.JPG" class="img-responsive2" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-pull-0 animate-box more-photo" data-animate-effect="fadeInLeft" style="text-align:justify">
+						<img src="images/gallery/20141013_8100_MaunaLoaObservatory.JPG" class="img-responsive2" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+					<div class="col-md-6 col-md-pull-0 animate-box more-photo" data-animate-effect="fadeInLeft" style="text-align:justify">
+						<img src="images/gallery/20141013_8110_MaunaLoaObservatory.JPG" class="img-responsive2" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-pull-0 animate-box more-photo" data-animate-effect="fadeInLeft" style="text-align:justify">
+						<img src="images/gallery/20141013_8112_MaunaLoaObservatory.JPG" class="img-responsive2" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+					<div class="col-md-6 col-md-pull-0 animate-box more-photo" data-animate-effect="fadeInLeft" style="text-align:justify">
+						<img src="images/gallery/20141112_8596_MaunaLoaObservatory.JPG" class="img-responsive2" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-pull-0 animate-box more-photo" data-animate-effect="fadeInLeft" style="text-align:justify">
+						<img src="images/gallery/20140414_LunarEclipse_LOGO.jpg" class="img-responsive2" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+					<div class="col-md-6 col-md-pull-0 animate-box more-photo" data-animate-effect="fadeInLeft" style="text-align:justify">
+						<img src="images/gallery/20141008_LunarEclipse_EarthShade_logo_[o7].jpg" class="img-responsive2" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="container">
+			
+			<div class="row copyright">
+				<div class="col-md-12" style="text-align:center">
+					<p><small class="block">
+						Icons made by
+						<a href="https://www.flaticon.com/authors/smalllikeart" target="_blank"><b>Small Like Art</b></a>,
+						<a href="https://www.flaticon.com/authors/good-ware" target="_blank"><b>Good Ware</b></a>,
+						<a href="https://www.flaticon.com/authors/freepik" target="_blank"><b>Freepik</b></a>,
+						<a href="https://www.flaticon.com/authors/kiranshastry" target="_blank"><b>Kiranshastry</b></a>,
+						<a href="https://www.flaticon.com/authors/designmodo" target="_blank"><b>Designmodo</b></a>, and
+						<a href="https://www.flaticon.com/authors/prettycons" target="_blank"><b>Prettycons</b></a>
+						from
+						<a href="http://gettemplates.co/" target="_blank"><b>www.flaticon.com</b></a>.<br>
+						Made by <a href="https://www.facebook.com/whlchang"><b>Lucky Chang</b></a>
+                        with the template designed by <a href="http://gettemplates.co/" target="_blank"><b>GetTemplates.co</b></a>.<br>
+						Copyright &copy; 2016 Free HTML5. All Rights Reserved.
+					</small></p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+    
+	<script src="js/visiable-menu.js" type="text/javascript"></script>
+	</body>
+</html>
+

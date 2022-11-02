@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../img/favicon.png">
+		<title>Side Project - Lucky Chang</title>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Custom styles for this template -->
+		<link href="css/style.css" rel="stylesheet">
+		<!-- Navibar -->
+		<link rel="stylesheet" href="../navibar/css/fonts.css">
+		<link rel="stylesheet" href="../navibar/css/navibar_full.css">
+		<link rel="stylesheet" href="../navibar/css/navibar_full-zh.css">
+    	<!-- Language Filter -->
+    	<style type="text/css">
+      		body.zh div[lang=en] {
+	        	display: none;
+      		}
+      		body.en div[lang=zh] {
+		        display: none;
+      		}
+    	</style>
+	</head>
+
+	<!-- Redirecting HTTP to HTTPS -->
+	<script src="../js/redirect2https.js"></script>
+
+	<body id="page-top" class="en">
+
+		<!-- Navibar -->
+		<div lang="en">
+		<div w3-include-html="../navibar/navibar.html"></div>
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<script> w3.includeHTML(); </script>
+		</div>
+		<div lang="zh">
+		<div w3-include-html="../navibar/navibar_zh.html"></div>
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<script> w3.includeHTML(); </script>
+		</div>
+
+		<!-- Language from URL -->
+		<script type="text/javascript">
+   			var url = location.href;
+   			if(url.indexOf('?') != -1){
+	      		var lang = "";
+      			var ary = url.split('?')[1].split('&');
+      			for(i = 0; i <= ary.length-1; i++){
+	         		if(ary[i].split('=')[0] == 'lang')
+            			lang = ary[i].split('=')[1];
+      			}
+      			if(lang == 'zh'){
+	         		document.body.className = 'zh';
+      			}
+   			}
+		</script>
+
+		<!-- Mouse Keyboard Forbidden -->
+		<script src="../js/nomousekeyboard.js"></script>
+		
+		
+		<section id="portfolio">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="section-title" lang="en">
+						<h2>Side Project</h2>
+						<p></p>
+					</div>
+					<div class="section-title" lang="zh">
+						<h2>業餘項目</h2>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="row row-0-gutter">
+				<!-- start portfolio item -->
+				<div class="col-md-6 col-0-gutter">
+					<div class="ot-portfolio-item" lang="en">
+						<figure class="effect-bubba">
+							<img src="nanao-adventure/images/20180403_P0720_Nanao.JPG" class="img-responsive" />
+							<figcaption>
+								<h2>Nan'ao Adventure<br/>「步道X部道」南澳部落踩線特輯</h2>
+								<p>Outdoor, Travel, Promotion</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-1">View more</a>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="ot-portfolio-item" lang="zh">
+						<figure class="effect-bubba">
+							<img src="nanao-adventure/images/20180403_P0720_Nanao.JPG" class="img-responsive" />
+							<figcaption>
+								<h2>Nan'ao Adventure<br/>「步道X部道」南澳部落踩線特輯</h2>
+								<p>戶外, 旅行, 推廣</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-1">閱讀更多</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+				<!-- start portfolio item -->
+				<div class="col-md-6 col-0-gutter">
+					<div class="ot-portfolio-item" lang="en">
+						<figure class="effect-bubba">
+							<img src="amiba-on-site/images/20140414_7413_LunarEclipse_[dg].JPG" class="img-responsive" />
+							<figcaption>
+								<h2>AMiBA On-site Operation<br/>阿米巴陣列駐站觀測</h2>
+								<p>Science</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="ot-portfolio-item" lang="zh">
+						<figure class="effect-bubba">
+							<img src="amiba-on-site/images/20140414_7413_LunarEclipse_[dg].JPG" class="img-responsive" />
+							<figcaption>
+								<h2>AMiBA On-site Operation<br/>阿米巴陣列駐站觀測</h2>
+								<p>科學</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-2">閱讀更多</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+			</div>
+			<div class="row row-0-gutter">
+				<!-- start portfolio item -->
+				<div class="col-md-6 col-0-gutter">
+					<div class="ot-portfolio-item" lang="en">
+						<figure class="effect-bubba">
+							<img src="protison/images/20160113_4266_Protison_[dg].JPG" class="img-responsive" />
+							<figcaption>
+								<h2>Protison<br/>遠距天文攝影行動模組開發</h2>
+								<p>Education, 3D printing, Software, UI/UX</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-3">View more</a>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="ot-portfolio-item" lang="zh">
+						<figure class="effect-bubba">
+							<img src="protison/images/20160113_4266_Protison_[dg].JPG" class="img-responsive" />
+							<figcaption>
+								<h2>Protison<br/>遠距天文攝影行動模組開發</h2>
+								<p>教育, 3D 列印, 軟體, UI/UX</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-3">閱讀更多</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+				<!-- start portfolio item -->
+				<div class="col-md-6 col-0-gutter">
+					<div class="ot-portfolio-item" lang="en">
+						<figure class="effect-bubba">
+							<img src="light-field-cam/images/20130318_0173_LiteOn_[cdg].JPG" class="img-responsive" />
+							<figcaption>
+								<h2>Light Field Camera<br/>光場相機開發產學合作</h2>
+								<p>Imaging, Optics, Algorithm</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-4">View more</a>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="ot-portfolio-item" lang="zh">
+						<figure class="effect-bubba">
+							<img src="light-field-cam/images/20130318_0173_LiteOn_[cdg].JPG" class="img-responsive" />
+							<figcaption>
+								<h2>Light Field Camera<br/>光場相機開發產學合作</h2>
+								<p>影像, 光學, 演算法</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-4">閱讀更多</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+			</div>
+			</div><!-- container -->
+		</section>
+
+		<p id="back-top">
+			<a href="#top"><i class="fa fa-angle-up"></i></a>
+		</p>
+
+		<footer>
+			<div class="container text-center">
+				<p>
+					Made by <a href="https://www.facebook.com/whlchang"><b>Lucky Chang</b></a>
+					with the template designed by <a href="http://moozthemes.com"><span>MOOZ</span>Themes.com</a>.<br>
+					Copyright &copy; 2019. All Rights Reserved.
+				</p>
+			</div>
+		</footer>
+
+		<!-- Modal for portfolio item 1 -->
+		<div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="Modal-label-1">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" lang="en">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-1">Nan'ao Adventure</h4>
+					</div>
+					<div class="modal-body">
+						<img src="nanao-adventure/images/20180403_P0720_Nanao.JPG" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>Outdoor</span><span>Travel</span><span>Promotion</span></div>
+						<p>
+							南澳有大海、有叢林、有溪谷、有瀑布，還有純樸的泰雅族部落與流傳千年的南島語文化。
+							我們可以沿著南澳溪出海口往上游走，不出幾個小時便盡覽一切。
+							本踩線計劃由林務局、健行筆記和 Odlo 贊助，向國人推廣南澳風情及旅遊資訊。
+						</p>
+					</div>
+					<div class="modal-footer">
+						<a href="nanao-adventure"><button type="button" class="btn btn-default">Learn more</button></a>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				<div class="modal-content" lang="zh">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-1">「步道X部道」南澳部落踩線特輯</h4>
+					</div>
+					<div class="modal-body">
+						<img src="nanao-adventure/images/20180403_P0720_Nanao.JPG" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>戶外</span><span>旅行</span><span>推廣</span></div>
+						<p>
+							南澳有大海、有叢林、有溪谷、有瀑布，還有純樸的泰雅族部落與流傳千年的南島語文化。
+							我們可以沿著南澳溪出海口往上游走，不出幾個小時便盡覽一切。
+							本踩線計劃由林務局、健行筆記和 Odlo 贊助，向國人推廣南澳風情及旅遊資訊。
+						</p>
+					</div>
+					<div class="modal-footer">
+						<a href="nanao-adventure/?lang=zh"><button type="button" class="btn btn-default">了解詳情</button></a>
+						<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal for portfolio item 2 -->
+		<div class="modal fade" id="Modal-2" tabindex="-1" role="dialog" aria-labelledby="Modal-label-2">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" lang="en">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-2">AMiBA On-site Operation</h4>
+					</div>
+					<div class="modal-body">
+						<img src="amiba-on-site/images/20140414_7413_LunarEclipse_[dg].JPG" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>Science</span></div>
+						<p align=justify>
+							The purpose of AMiBA was to probe the early universe by
+							precisely measuring the photons of cosmic microwave background (CMB) 
+							which were emitted right after the Big Bang and warmed up by galaxy clusters.
+							The project is founded by MOST and directed by ASIAA.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<a href="amiba-on-site"><button type="button" class="btn btn-default">Learn more</button></a>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				<div class="modal-content" lang="zh">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-2">阿米巴陣列駐站觀測</h4>
+					</div>
+					<div class="modal-body">
+						<img src="amiba-on-site/images/20140414_7413_LunarEclipse_[dg].JPG" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>科學</span></div>
+						<p align=justify>
+							阿米巴計劃的目的，是透過精準測量被星系團加熱宇宙微波背景輻射，來探索大霹靂剛發生不久，還是嬰兒時期的宇宙。
+							本計劃主要是由科技部支援經費，並由中研院主責運轉。
+						</p>
+					</div>
+					<div class="modal-footer">
+						<a href="amiba-on-site/?lang=zh"><button type="button" class="btn btn-default">了解詳情</button></a>
+						<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal for portfolio item 3 -->
+		<div class="modal fade" id="Modal-3" tabindex="-1" role="dialog" aria-labelledby="Modal-label-3">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" lang="en">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-3">Protison</h4>
+					</div>
+					<div class="modal-body">
+						<img src="protison/images/20160113_4266_Protison_[dg].JPG" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>Education</span><span>3D printing</span><span>Software</span><span>UI/UX</span></div>
+						<p>
+							Under construction...
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				<div class="modal-content" lang="zh">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-3">遠距天文攝影行動模組開發</h4>
+					</div>
+					<div class="modal-body">
+						<img src="protison/images/20160113_4266_Protison_[dg].JPG" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>教育</span><span>3D 列印</span><span>軟體</span><span>UI/UX</span></div>
+						<p>
+							資料建置中...
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal for portfolio item 4 -->
+		<div class="modal fade" id="Modal-4" tabindex="-1" role="dialog" aria-labelledby="Modal-label-4">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" lang="en">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-4">Light Field Camera</h4>
+					</div>
+					<div class="modal-body">
+						<img src="light-field-cam/images/20130318_0173_LiteOn_[cdg].JPG" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>Imaging</span><span>Optics</span><span>Algorithm</span></div>
+						<p>
+							Under construction...
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				<div class="modal-content" lang="zh">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-4">光場相機開發產學合作</h4>
+					</div>
+					<div class="modal-body">
+						<img src="light-field-cam/images/20130318_0173_LiteOn_[cdg].JPG" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>影像</span><span>光學</span><span>演算法</span></div>
+						<p>
+							資料建置中...
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bootstrap core JavaScript
+			================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/SmoothScroll.js"></script>
+		<script src="js/theme-scripts.js"></script>
+	</body>
+</html>
