@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lucky in the House</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Add custom CSS here -->
+    <link href="css/slidefolio.css" rel="stylesheet">
+	  <!-- Font Awesome -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+    #hs {
+	  color: #FFF;
+    }
+    .ew {
+	  color: #000;
+    }
+    </style>
+    
+    <!-- Favicons
+	  ================================================== -->
+	  <link rel="shortcut icon" href="img/favicon.png" >
+    
+  </head>
+
+  <!-- Redirecting HTTP to HTTPS -->
+  <script src="js/redirect2https.js"></script>
+
+  <body>
+
+  <!-- Mouse Keyboard Forbidden -->
+  <script src="js/nomousekeyboard.js"></script>
+
+  <!-- Header Area -->
+    <div id="top" class="header">
+      <div class="vert-text">
+	      <img class="img-rounded" alt="Lucky Chang" src="img/logo-mini.jpg" width="100" height="100"/>
+        <h2><em>Lucky in the House</em></h2>
+				<h3>網站維護中……</h3>
+      </div>
+    </div>
+  <!-- Header Area -->
+
+  <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">Made by <a href="https://www.facebook.com/whlchang"><strong>Lucky Chang</strong></a> with the template designed by <strong><a href="http://www.free-css.com/free-css-templates/page210/slidefolio">Surfmandu</a></strong>. <br>
+          Copyright © 2007 - 2017 Free CSS. All Rights Reserved.</div>
+        </div>
+      </div>
+    </footer>
+  <!-- /Footer -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+	  <script src="js/jquery-scrolltofixed-min.js"></script>
+	  <script src="js/jquery.vegas.js"></script>
+	  <script src="js/jquery.mixitup.min.js"></script>
+	  <script src="js/jquery.validate.min.js"></script>
+	  <script src="js/script.js"></script>
+	  <script src="js/bootstrap.js"></script>
+
+  <!-- Mixitup : Grid -->
+    <script>
+		$(function(){
+    $('#Grid').mixitup();
+      });
+    </script>
+  <!-- /Mixitup : Grid -->	
+
+    <!-- Custom JavaScript for Smooth Scrolling - Put in a custom JavaScript file to clean this up -->
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+
+    <!-- Navbar -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#nav').scrollToFixed();
+      });
+    </script>
+    <!-- /Navbar-->
+	
+  </body>
+
+</html>
