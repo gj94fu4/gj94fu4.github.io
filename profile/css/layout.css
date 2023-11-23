@@ -401,7 +401,7 @@ ul#nav li.current a, ul#nav li.current span {
 }
 @-moz-keyframes python {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 80%;  }
 }
 @-moz-keyframes latex {
   0%   { width: 0px;  }
@@ -446,7 +446,7 @@ ul#nav li.current a, ul#nav li.current span {
 }
 @-webkit-keyframes python {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 80%;  }
 }
 @-webkit-keyframes latex {
   0%   { width: 0px;  }
