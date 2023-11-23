@@ -344,6 +344,11 @@ ul#nav li.current a, ul#nav li.current span {
   	-moz-animation: matlab 2s ease;
   	-webkit-animation: matlab 2s ease;
 }
+.python {
+  	width: 80%;
+  	-moz-animation: python 2s ease;
+  	-webkit-animation: python 2s ease;
+}
 .latex {
   	width: 70%;
   	-moz-animation: latex 2s ease;
@@ -394,6 +399,10 @@ ul#nav li.current a, ul#nav li.current span {
   0%   { width: 0px;  }
   100% { width: 70%;  }
 }
+@-moz-keyframes python {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
 @-moz-keyframes latex {
   0%   { width: 0px;  }
   100% { width: 70%;  }
@@ -432,6 +441,10 @@ ul#nav li.current a, ul#nav li.current span {
 }
 
 @-webkit-keyframes matlab {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+@-webkit-keyframes python {
   0%   { width: 0px;  }
   100% { width: 70%;  }
 }
