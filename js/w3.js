@@ -276,7 +276,7 @@ w3.displayHttp = function (id, file) {
 w3.http = function (target, readyfunc, xml, method) {
   if (!method) {method = "GET"; }
   if (window.XMLHttpRequest) {
-    Const httpObj = new XMLHttpRequest();
+    const httpObj = new XMLHttpRequest();
   } else if (window.ActiveXObject) {
     const httpObj = new ActiveXObject("Microsoft.XMLHTTP");
   }
