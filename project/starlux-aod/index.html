@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <form id="chat-form">
+        <input type="text" id="question" placeholder="Enter your question">
+        <button type="submit">Ask</button>
+    </form>
+    <div id="response"></div>
+
+    <script>
+        document.getElementById('chat-form').addEventListener('submit', async function (event) {
+            event.preventDefault();
+            const question = document.getElementById('question').value;
+            const responseDiv = document.getElementById('response');
+
+            const response = await fetch('http://localhost:5000/ask', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ question: question })
+            });
+
+            const data = await response.json();
+            responseDiv.innerText = data.answer;
+        });
+    </script>
+</body>
+</html>
