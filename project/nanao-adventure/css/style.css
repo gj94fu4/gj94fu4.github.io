@@ -1,62 +1,62 @@
 /*
 
-	Theme Name: Rooky
+  Theme Name: Rooky
 
-	Template URI: 
+  Template URI: 
 
-	Description: 
+  Description: 
 
-	Author:
+  Author:
 
-	Author URI: 
+  Author URI: 
 
-	License: GNU General Public License version 3.0
+  License: GNU General Public License version 3.0
 
-	License URI:
+  License URI:
 
-	Version: 1.0
+  Version: 1.0
 
-	
+  
 
-	1. Header
+  1. Header
 
-		1. Nav
+    1. Nav
 
-	2. Top-pan
+  2. Top-pan
 
-	3. Title-Page
+  3. Title-Page
 
-	4. Section-One
+  4. Section-One
 
-		1. Four-Box-Pan
+    1. Four-Box-Pan
 
-	5. Section Two
+  5. Section Two
 
-		1. Video
+    1. Video
 
-		2. Slider
+    2. Slider
 
-	6. Section Three
+  6. Section Three
 
-		1. Pricing
+    1. Pricing
 
-	7. Section Four
+  7. Section Four
 
-		1.Team
+    1.Team
 
-	8. Section Five
+  8. Section Five
 
-		1. Subscribe Form
+    1. Subscribe Form
 
-	9. Section Six
+  9. Section Six
 
-		1. Contact Form
+    1. Contact Form
 
-		2. Map
+    2. Map
 
-	10. Footer
+  10. Footer
 
-		
+    
 
 */
 
@@ -64,35 +64,35 @@
 
 html {
 
-	-ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 
-	-webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 
 }
 
 *, *:before, *:after {
 
-	-webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 
-	-moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 
-	box-sizing: border-box;
+  box-sizing: border-box;
 
 }
 
 input, textarea {
 
-	-webkit-appearance: none;
+  -webkit-appearance: none;
 
-	-webkit-border-radius: 0;
+  -webkit-border-radius: 0;
 
 }
 
 button, html input[type="button"],/* 1 */ input[type="reset"], input[type="submit"] {
 
-	-webkit-appearance: button;
+  -webkit-appearance: button;
 
-	cursor: pointer;
+  cursor: pointer;
 
  *overflow:visible;
 
@@ -102,33 +102,33 @@ button, html input[type="button"],/* 1 */ input[type="reset"], input[type="submi
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, video2, input, main {
 
-	-webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 
-	-moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 
-	box-sizing: border-box;
+  box-sizing: border-box;
 
-	margin: 0;
+  margin: 0;
 
-	padding: 0;
+  padding: 0;
 
-	vertical-align: baseline;
+  vertical-align: baseline;
 
-	border: 0;
+  border: 0;
 
-	outline: 0;
+  outline: 0;
 
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, img, main {
 
-	display: block
+  display: block
 
 }
 
 audio, canvas, video, video2 {
 
-	display: inline-block;
+  display: inline-block;
 
  *display:inline;
 
@@ -138,43 +138,43 @@ audio, canvas, video, video2 {
 
 blockquote:before, blockquote:after, q:before, q:after {
 
-	content: '';
+  content: '';
 
-	content: none;
+  content: none;
 
 }
 
 .clear {
 
-	clear: both;
+  clear: both;
 
-	line-height: 0;
+  line-height: 0;
 
-	height: 0;
+  height: 0;
 
 }
 
 a {
 
-	text-decoration: none;
+  text-decoration: none;
 
-	outline: none;
+  outline: none;
 
-	color: #010101;
+  color: #010101;
 
-	transition-delay: 0s;
+  transition-delay: 0s;
 
-	transition-duration: 0.6s;
+  transition-duration: 0.6s;
 
-	transition-property: all;
+  transition-property: all;
 
-	transition-timing-function: ease;
+  transition-timing-function: ease;
 
 }
 
 a:focus, img:focus, button:focus, .btn:focus {
 
-	outline: none;
+  outline: none;
 
 }
 
@@ -192,11 +192,11 @@ a:focus, img:focus, button:focus, .btn:focus {
 
 ::selection {
 
-	background-color: #6bb551;
+  background-color: #6bb551;
 
-	color: #fff;
+  color: #fff;
 
-	text-shadow: none;
+  text-shadow: none;
 
 }
 
@@ -236,15 +236,15 @@ div#navbar ul ul {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-	transition: all .2s ease-in-out;
-	width: 200px;
-	padding-top: 10px;
-	line-height: 50px;
-	background-color: rgba(0,0,0,0.8);
+  transition: all .2s ease-in-out;
+  width: 200px;
+  padding-top: 10px;
+  line-height: 50px;
+  background-color: rgba(0,0,0,0.8);
 }
 
 div#navbar ul ul {
-	text-align: left;
+  text-align: left;
 }
 
 div#navbar ul li:hover > ul {

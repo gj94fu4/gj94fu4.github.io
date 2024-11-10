@@ -146,20 +146,20 @@ ul#nav ul a {
 
    #nav-wrap > a:before,
    #nav-wrap > a:after {
-	    position: absolute;
-		border: 2px solid #fff;
-		top: 35%;
-		left: 25%;
-		right: 25%;
-		content: '';
-	}
+      position: absolute;
+    border: 2px solid #fff;
+    top: 35%;
+    left: 25%;
+    right: 25%;
+    content: '';
+  }
    #nav-wrap > a:after { top: 60%; }
 
    /* toggle buttons */
    #nav-wrap:not( :target ) > a:first-of-type,
    #nav-wrap:target > a:last-of-type  {
-	   display: block;
-	}
+     display: block;
+  }
 
    /* hide menu panel */
    #nav-wrap ul#nav {
