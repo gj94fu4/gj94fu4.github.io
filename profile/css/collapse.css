@@ -1,0 +1,23 @@
+.collapsible-content {
+  display: none; /* 預設隱藏 */
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.collapsible-content.active {
+  display: block; /* 展開內容 */
+}
+
+p.info .arrow {
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.collapsible-content.active + .arrow {
+  transform: rotate(90deg); /* 旋轉箭頭 */
+}
+
+[data-toggle="collapse"] {
+  cursor: pointer; /* 鼠標變成手指樣式 */
+}

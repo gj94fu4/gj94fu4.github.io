@@ -32,6 +32,7 @@ ul#nav li:hover > ul {
 }
 
 ul#nav ul li {
+    text-align: left !important;
     float: none;
     display: block;
 }
