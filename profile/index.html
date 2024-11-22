@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
   <head id="head">
 
-    <!-- Fundamental Informations (SEO) -->
+    <!-- Meta Context -->
     <meta charset="utf-8">
-    <title>Lucky Chang</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title id="dynamic-title"></title>
+    <meta name="description" content="" id="dynamic-description">
+    <meta name="author" content="Lucky Chang">
+
+    <!-- Dynamic SEO -->
+    <meta id="seo-en" data-title="About Me - Lucky in the House" data-description="This is Lucky Chang's personal portfolio website.">
+    <meta id="seo-zh" data-title="關於我 - Lucky in the House" data-description="這是張文軒的個人作品網站。">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -32,8 +35,9 @@
     <script src="js/modernizr.js"></script>
     <script src="js/dynamicLoad.js" defer></script>
     <script src="js/collapse.js" defer></script>
+    <script src="js/switchLanguage.js" defer></script>
     <script src="../js/nomousekeyboard.js"></script>
-    <script src="../js/redirect2https.js"></script>
+    <!-- <script src="../js/redirect2https.js"></script> -->
 
   </head>
 
