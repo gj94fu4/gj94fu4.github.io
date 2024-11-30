@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Detect language from URL query parameters
   const urlParams = new URLSearchParams(window.location.search);
-  const currentLanguage = urlParams.get("lang") === "zh" ? "zh" : "en"; // Default to English
+  const currentLanguage = urlParams.get("lang") === "zh" ? "zh" : "en"; // Default to English if lang is not "zh"
 
   // Set body class based on detected language
   document.body.className = currentLanguage;
@@ -17,8 +17,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // Update meta description
     const description = seoMeta.getAttribute("data-description");
     if (description) {
-      document.querySelector('meta[name="description"]')?.setAttribute("content", description);
+      const descriptionMeta = document.querySelector('meta[name="description"]');
+      descriptionMeta && descriptionMeta.setAttribute("content", description);
     }
+
+    // Update Open Graph metadata
+    const ogTitle = seoMeta.getAttribute("data-og-title");
+    const ogDescription = seoMeta.getAttribute("data-og-description");
+    ogTitle && document.querySelector('meta[property="og:title"]').setAttribute("content", ogTitle);
+    ogDescription && document.querySelector('meta[property="og:description"]').setAttribute("content", ogDescription);
+
+    // Update Twitter metadata
+    const twitterTitle = seoMeta.getAttribute("data-twitter-title");
+    twitterTitle && document.querySelector('meta[name="twitter:title"]').setAttribute("content", twitterTitle);
   }
 
   // Add event listeners for language switch buttons

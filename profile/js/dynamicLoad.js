@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     // Dynamic loading of Navibar
-    const navibar = await fetch("../navibar/navibar_new.html");
+    const navibar = await fetch("../navibar/navibar_v2.html");
     const navibarHTML = await navibar.text();
     document.querySelector("#navibar").innerHTML = navibarHTML;
 
